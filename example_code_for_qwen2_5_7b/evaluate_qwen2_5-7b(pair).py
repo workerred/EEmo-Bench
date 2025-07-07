@@ -105,7 +105,7 @@ max_pixels = 1280*28*28
 processor = AutoProcessor.from_pretrained(model_dir, min_pixels=min_pixels, max_pixels=max_pixels)
 
 json_file = "path/to/EEmo-Bench(pair).json"
-output_file = "path/to/EEmo-Bench(pair)_response.json"
+output_file = f"path/to/EEmo-Bench({model_name}-pair)_response.json"
 
 input_data, output_data = load_data(json_file, output_file)
 current_index = find_last_generate(output_data)
