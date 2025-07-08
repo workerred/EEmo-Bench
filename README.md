@@ -93,14 +93,28 @@ Based on the constructed dataset and emotional attributes, we propose **EEmo-Ben
 
 ## Glance at Q-Bench-Video Performance
 
+
 <div align="left">
-<div style="width: 90%; text-align: center; margin:auto;">
-  <img style="width:40%" src="overall.png">
-  <img style="width:54%" src="description.png">
-</div>
-<div style="width: 100%; text-align: center; margin:auto;">
-  <img style="width:41%" src="perception.png">
-  <img style="width:47%" src="Tab4.png">
+  <div style="width: 100%; text-align: center; margin:auto; display: flex; justify-content: space-around;">
+    <figure style="width:41%">
+      <img style="width:100%" src="overall.png">
+      <figcaption>(a) Overall performance on EEmo-Bench</figcaption>
+    </figure>
+    <figure style="width:56%">
+      <img style="width:100%" src="description.png">
+      <figcaption>(b) Performance in description task</figcaption>
+    </figure>
+  </div>
+  <div style="width: 100%; text-align: center; margin:auto; display: flex; justify-content: space-around;">
+    <figure style="width:41%">
+      <img style="width:100%" src="perception.png">
+      <figcaption>(c) Performance on different perceptual dimensions in perception tasks</figcaption>
+    </figure>
+    <figure style="width:47%">
+      <img style="width:100%" src="Tab4.png">
+      <figcaption>(d) Performance on different question concerns and content categories in perception tasks</figcaption>
+    </figure>
+  </div>
 </div>
 
 **A overview of the EEmo-Bench Results.**
@@ -147,3 +161,28 @@ Outcomes on Assessment task.
 | mPLUG-owl3-7B       | 0.85/0.86 | 0.56/0.53 | -0.22/-0.07 | 0.40/0.44 |
 | Qwen2-vl-7B         | **0.87**/**0.88** | **0.59**/**0.57** | -0.04/-0.04 | 0.47/0.47 |
 | Qwen2.5-vl-7B       | 0.80/0.74 | 0.46/0.46 | **0.32**/**0.31**   | **0.53**/**0.50** |
+
+## Evaluate your model on EEmo-Bench
+
+1. Test on Perception, Ranking, Description tasks.
+
+Assume that you have downloaded the [EEmo-Bench_single](https://huggingface.co/datasets/Workerred/EEmo-Bench_single) and [EEmo-Bench_pair](https://huggingface.co/datasets/Workerred/EEmo-Bench_pair) datasets.
+
+It is highly recommended to convert your model into Huggingface format to smoothly test these data. Here, we provide a sample code for batch testing using `Qwen2.5-VL-7B` on EEmo-Bench, targeting both **single-image** and **image-pair** scenarios. See [example_code_for_qwen2_5_7b](https://github.com/workerred/EEmo-Bench/tree/main/example_code_for_qwen2_5_7b) for details, and modify them for your custom model to test on your model.
+
+Modify the following testing arguments and run tests on Qwen2.5-VL-7B or your MLLM models using the command below.
+
+<details>
+  <summary>Testing arguments</summary>
+
+  - `model_name` (str): Customized name of your model(e.g., "Qwen2.5-7b").
+- `model_dir` (str): Path to your downloaded model. 
+- `json_file` (str): Path to the question-answer pair JSON files in your downloaded EEmo-Bench dataset. 
+- `output_file` (str): The save path for the result JSON files.
+- `image_folder` (str): Path to the images folder in your downloaded EEmo-Bench dataset. 
+</details>
+
+```
+  python example_code_for_qwen2_5_7b/evaluate_qwen2_5-7b(single).py  # test single-image
+  python example_code_for_qwen2_5_7b/evaluate_qwen2_5-7b(pair).py  # test image-pair
+```
