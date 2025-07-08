@@ -35,7 +35,7 @@ _How MLLMs Perform on Image Evoked Emotion Understanding?_
     <a href="https://arxiv.org/abs/2504.16405"><strong>Paper</strong></a> |
     <a href="https://github.com/workerred/EEmo-Bench"><strong>Github</strong></a> |
     <a href="https://huggingface.co/datasets/Workerred/EEmo-Bench_single"><strong>Single Image Data</strong></a>   |
-    <a href="ttps://huggingface.co/datasets/Workerred/EEmo-Bench_pair"><strong>Image Pair Data</strong></a>  
+    <a href="https://huggingface.co/datasets/Workerred/EEmo-Bench_pair"><strong>Image Pair Data</strong></a>  
 </div>
 
 <div style="width: 100%; text-align: center; margin:auto;">
@@ -53,7 +53,7 @@ we introduce **EEmo-Bench**, a novel benchmark dedicated to the analysis of the 
   Our **EEmo-Bench** paves the path for further research aimed at enhancing the comprehensive perceiving and understanding capabilities of MLLMs concerning image-evoked emotions, which is crucial for machine-centric emotion perception and understanding.
 
 ## Release
-- [2025/7/7] 🔥 Release official Results of 19 commonly-used MLLMs on EEmo-Bench, click on [leaderboards](https://github.com/workerred/EEmo-Bench/tree/main/leaderboards) to view details
+- [2025/7/7] 🔥 Release official Results of 19 commonly-used MLLMs on EEmo-Bench, click on [leaderboards](https://github.com/workerred/EEmo-Bench/tree/main/leaderboards) to view details.
 - [2025/7/6] 🔥 Release the sample script for testing on EEmo-Bench.
 - [2025/7/5] 🔥 Release [single-image](https://huggingface.co/datasets/Workerred/EEmo-Bench_single) and [image-pair](https://huggingface.co/datasets/Workerred/EEmo-Bench_pair) evoked emotion understanding question-answer datasets.
 - [2025/7/4] 🔥 Our work ["EEmo-Bench: A Benchmark for Multi-modal Large Language Models on Image Evoked Emotion Assessment"](https://arxiv.org/abs/2504.16405) is accepted by ACMMM 2025.
@@ -94,30 +94,12 @@ Based on the constructed dataset and emotional attributes, we propose **EEmo-Ben
 ## Glance at Q-Bench-Video Performance
 
 
-<div align="left">
-  <div style="width: 100%; text-align: center; margin:auto; display: flex; justify-content: space-around;">
-    <figure style="width:41%">
-      <img style="width:100%" src="overall.png">
-      <figcaption>(a) Overall performance on EEmo-Bench</figcaption>
-    </figure>
-    <figure style="width:56%">
-      <img style="width:100%" src="description.png">
-      <figcaption>(b) Performance in description task</figcaption>
-    </figure>
+<div style="width: 100%; text-align: center; margin:auto;">
+      <img style="width:100%" src="results.png">
   </div>
-  <div style="width: 100%; text-align: center; margin:auto; display: flex; justify-content: space-around;">
-    <figure style="width:41%">
-      <img style="width:100%" src="perception.png">
-      <figcaption>(c) Performance on different perceptual dimensions in perception tasks</figcaption>
-    </figure>
-    <figure style="width:47%">
-      <img style="width:100%" src="Tab4.png">
-      <figcaption>(d) Performance on different question concerns and content categories in perception tasks</figcaption>
-    </figure>
-  </div>
-</div>
 
-**A overview of the EEmo-Bench Results.**
+
+**An overview of the EEmo-Bench Results.**
 
 Outcomes on Perception, Ranking, and Description task.
 
@@ -137,17 +119,17 @@ Outcomes on Perception, Ranking, and Description task.
 | mPLUG-owl2-7B                  | 61.00%       | 50.31%    | 55.66%   | 60.83%     | 38.21%    | 49.52%   | 50.83%                | 65.38%   | 58.73%   | 45.40%     | 53.57%  | 48.26%  | 44.27%               | 47.66%                | 41.20%          | 38.42%                | 43.35%  | 23.42%              | 20.93%             | 25.50%             | 17.59%               | 22.87%  | 35.68%  |
 | mPLUG-owl3-7B                  | 59.11%       | 52.96%    | 56.04%   | 59.84%     | 52.84%    | 56.34%   | 54.06%                | 67.89%   | 58.41%   | 48.01%     | 56.14%  | 58.53%  | 54.87%               | 63.24%                | 52.72%          | 45.44%                | 54.75%  | 46.46%              | 74.53%             | 65.17%             | 51.11%               | 59.47%  | 56.52%  |
 | Qwen2-vl-7B                    | 59.98%       | 59.39%    | 59.69%   | 54.97%     | 54.43%    | 54.70%   | 58.62%                | 66.42%   | 56.36%   | 48.24%     | 57.99%  | 61.36%  | 55.93%               | 58.76%                | 50.00%          | 29.30%                | 49.60%  | 43.29%              | 72.40%             | 57.50%             | 47.96%               | 55.87%  | 51.95%  |
-| Qwen2.5-vl-7B                  | 64.37%       | 57.24%    | 60.81%   | 59.24%     | 54.93%    | 57.09%   | 58.22%                | 59.56%   | 53.15%   | 49.72%     | 59.54%  | 61.88%  | 58.20%               | 68.41%                | <u>69.02%</u>          | 53.60%                | 62.10%  | 54.30%              | 82.67%             | 73.33%             | 54.81%               | 67.33%  | 64.06%  |
+| Qwen2.5-vl-7B                  | 64.37%       | 57.24%    | 60.81%   | 59.24%     | 54.93%    | 57.09%   | 58.22%                | 59.56%   | 53.15%   | 49.72%     | 59.54%  | 61.88%  | 58.20%               | 68.41%                | *69.02%*          | 53.60%                | 62.10%  | 54.30%              | 82.67%             | 73.33%             | 54.81%               | 67.33%  | 64.06%  |
 | Large-scale open-source MLLMs  |              |           |          |            |           |          |                       |          |          |            |         |         |                      |                       |                 |                       |         |                     |                    |                    |                      |         |         |
-| LLava-onevision-72B            | 66.36%       | <u>64.64%</u>    | <u>65.50%</u>   | **65.01%**     | 58.11%    | 61.56%   | <u>64.65%</u>                | 74.27%   | 64.22%   | <u>52.78%</u>     | <u>64.16%</u>  | 66.92%  | 51.13%               | 61.79%                | 49.46%          | 63.77%                | 56.79%  | 47.34%              | 82.93%             | 76.33%             | 47.78%               | 64.73%  | 59.76%  |
-| Qwen2-vl-72B                   | <u>67.89%</u>       | <u>61.58%</u>    | <u>64.74%</u>   | <u>64.12%</u>     | <u>60.00%</u>    | <u>62.06%</u>  | 63.75%                | 74.48%   | 64.98%   | 51.87%     | <u>63.83%</u>  | 64.69%  | <u>62.13%</u>               | 60.76%                | 59.67%          | 59.82%                | 60.76%  | 54.30%              | 83.33%             | 67.67%             | <u>57.59% </u>              | 67.43%  | 63.26%  |
-| Qwen2.5-vl-72B                 | <u>67.08%</u>       | 61.28%    | 64.18%   | 63.92%     | 59.80%    | <u>61.86%</u>   | <u>63.81%</u>                | <u>75.00%</u>   | <u>65.30%</u>   | 48.92%     | 63.39%  | **67.84%** | **68.2%**               | 70.97%                | 62.61%          | <u>71.75%</u>                | <u>68.78%</u>  | **68.10%**              | **93.87%**             | 77.83%             | 57.22%               | <u>75.93%</u>  | **71.46%**  |
+| LLava-onevision-72B            | 66.36%       | *64.64%*    | *65.50%*   | **65.01%**     | 58.11%    | 61.56%   | *64.65%*                | 74.27%   | 64.22%   | *52.78%*     | *64.16%*  | 66.92%  | 51.13%               | 61.79%                | 49.46%          | 63.77%                | 56.79%  | 47.34%              | 82.93%             | 76.33%             | 47.78%               | 64.73%  | 59.76%  |
+| Qwen2-vl-72B                   | *67.89%*       | *61.58%*    | *64.74%*   | *64.12%*     | *60.00%*    | *62.06%*  | 63.75%                | 74.48%   | 64.98%   | 51.87%     | *63.83%*  | 64.69%  | *62.13%*               | 60.76%                | 59.67%          | 59.82%                | 60.76%  | 54.30%              | 83.33%             | 67.67%             | *57.59%*              | 67.43%  | 63.26%  |
+| Qwen2.5-vl-72B                 | *67.08%*       | 61.28%    | 64.18%   | 63.92%     | 59.80%    | *61.86%*   | *63.81%*                | *75.00%*   | *65.30%*   | 48.92%     | 63.39%  | **67.84%** | **68.2%**               | 70.97%                | 62.61%          | *71.75%*                | *68.78%*  | **68.10%**              | **93.87%**             | 77.83%             | 57.22%               | *75.93%*  | **71.46%**  |
 | Closed-source MLLMs            |              |           |          |            |           |          |                       |          |          |            |         |         |                      |                       |                 |                       |         |                     |                    |                    |                      |         |         |
-| Gemini-pro-1.5                 | 67.06%       | 59.65%    | 63.36%   | 61.00%     | 58.27%    | 59.64%   | 60.23%                | **76.02%**   | 63.00%   | 52.44%     | 62.09%  | 60.65%  | 58.87%               | <u>73.79%</u>                | **71.20%**          | **76.67%**                | **69.50%**  | <u>64.30% </u>             | <u>90.67%</u>             | 73.83%             | 53.89%               | 72.03%  | <u>70.45%</u>  |
-| GPT-4o                         | **68.25%**       | **64.80%**   | **66.53%**   | <u>64.41%</u>     | **61.49%**    |**62.95%**   | **65.41%**                | <u>75.52%</u>   | **65.62%**   | <u>54.37%</u>     | **65.31%**  | 65.67%  | <u>63.93%</u>               | 71.03%                | <u>69.24% </u>         | 66.93%                | <u>67.64%</u>  | 56.96%              | <u>90.67%</u>             | <u>79.33%</u>             | <u>64.44%</u>               | <u>73.93%</u>  | 70.00%  |
-| Qwen-max                       | 66.51%       | 60.96%    | 63.74%   | 63.59%     | 58.84%    | 61.22%   | 63.06%                | 74.87%   | <u>65.33%</u>   | 47.71%     | 62.88%  | <u>67.27%</u>  | 60.14%               | <u>71.86%</u>                | 61.65%          | <u>68.42%</u>                | 65.73%  | 62.15%              | 88.51%             | **80.85%**             | 55.85%               | 73.06%  | 68.48%  |
+| Gemini-pro-1.5                 | 67.06%       | 59.65%    | 63.36%   | 61.00%     | 58.27%    | 59.64%   | 60.23%                | **76.02%**   | 63.00%   | 52.44%     | 62.09%  | 60.65%  | 58.87%               | *73.79%*                | **71.20%**          | **76.67%**                | **69.50%**  | *64.30%*             | *90.67%*             | 73.83%             | 53.89%               | 72.03%  | *70.45%*  |
+| GPT-4o                         | **68.25%**       | **64.80%**   | **66.53%**   | *64.41%*     | **61.49%**    |**62.95%**   | **65.41%**                | *75.52%*   | **65.62%**   | *54.37%*     | **65.31%**  | 65.67%  | *63.93%*               | 71.03%                | *69.24%*         | 66.93%                | *67.64%*  | 56.96%              | *90.67%*             | *79.33%*             | *64.44%*               | *73.93%*  | 70.00%  |
+| Qwen-max                       | 66.51%       | 60.96%    | 63.74%   | 63.59%     | 58.84%    | 61.22%   | 63.06%                | 74.87%   | *65.33%*   | 47.71%     | 62.88%  | *67.27%*  | 60.14%               | *71.86%*                | 61.65%          | *68.42%*                | 65.73%  | 62.15%              | 88.51%             | **80.85%**             | 55.85%               | 73.06%  | 68.48%  |
 | Qwen-plus                      | 63.56%       | 55.69%    | 59.63%   | 62.39%     | 55.72%    | 59.06%   | 57.64%                | 68.17%   | 62.43%   | 52.06%     | 59.43%  | 61.19%  | 60.27%               | 63.72%                | 66.70%          | 54.65%                | 61.17%  | 53.80%              | 80.14%             | 71.69%             | 49.43%               | 65.35%  | 62.74%  |
-| Claude-3.7-Sonnet              | 64.08%       | 59.04%    | 61.56%   | 61.93%     | **61.49%**    | 61.71%   | 60.69%                | 73.82%   | 61.42%   | 52.05%     | 61.61%  | <u>67.05%</u>  | 60.53%               | **75.38%**                | 62.28%          | 68.16%                | 66.89%  | <u>64.18%</u>              | <u>91.33%</u>             | <u>79.67%</u>             | **64.81%**               | **76.10%**  | <u>70.34%</u>  |
+| Claude-3.7-Sonnet              | 64.08%       | 59.04%    | 61.56%   | 61.93%     | **61.49%**    | 61.71%   | 60.69%                | 73.82%   | 61.42%   | 52.05%     | 61.61%  | *67.05%*  | 60.53%               | **75.38%**                | 62.28%          | 68.16%                | 66.89%  | *64.18%*              | *91.33%*             | *79.67%*             | **64.81%**               | **76.10%**  | *70.34%*  |
 
 Outcomes on Assessment task.
 
@@ -185,4 +167,98 @@ Modify the following testing arguments and run tests on Qwen2.5-VL-7B or your ML
 ```
   python example_code_for_qwen2_5_7b/evaluate_qwen2_5-7b(single).py  # test single-image
   python example_code_for_qwen2_5_7b/evaluate_qwen2_5-7b(pair).py  # test image-pair
+```
+
+2. Test on Assessment task.
+
+We provide an **pseudo code** for evaluating the assessment abilities of MLLMs for different attributes. It should be noted that the pseudo code can be easily integrated with any new MLLMs (based on the transformers architecture), enabling them to output quantified predictions of the VAD value.
+
+```python
+from MLLM_model import Model, Tokenizer, embed_image_and_text
+from PIL import Image
+import torch
+
+vad_dimension = "valence" # arousal, dominance
+prompt = f"Assume you are an expert in emotional psychology. How would you rate the {vad} this " \
+"image evokes in the viewer? The level of {vad} this image evokes in the viewer is"
+
+model, tokenizer = Model, Tokenizer()
+image = Image.open("my_image.jpg")
+input_embeds = embed_image_and_text(image, prompt)
+output_logits = model(input_embeds=input_embeds)["logits"][:, -1]
+toks = ["Positive", "Neutral", "Negative"] # related level keywords
+ids_ = [id_[0] for id_ in tokenizer(toks)["input_ids"]]
+p_l = torch.softmax(output_logits[:, ids_], -1))
+weight = torch.tensor([1,0.5,0])
+vad_pred = torch.inner(p_l, weight)
+```
+
+\* Note that you can modify `vad_dimension` to switch between predicting valence, arousal, or dominance scores, but you need to match the related level keywords `toks` with them. (See the [paper](https://arxiv.org/abs/2504.16405) for details.)
+
+3. Evaluate open-ended responses.
+
+We provide a sample function to rate the open-ended responses, `result` is the list of scores while `score` is the standardized score.
+
+```python
+from openai import OpenAI
+client = OpenAI(api_key="your_api_key", base_url="https://api.deepseek.com")
+
+def judge_open_ended(question, response, answer):
+    def deepseek_eval(prompt):
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant and emotional expert."},
+                {"role": "user", "content": f"{prompt}"},
+            ],
+            stream=False
+        )
+        return response.choices[0].message.content
+
+    result = []
+    msg = f'''Given the question [{question}], evaluate whether the response [{response}] completely matches the correct 
+        answer [{answer}]. It should be noted that the emotions considered during the evaluation include 
+        anger, disgust, fear, joy, neutral, sadness, and surprise.The redundancy or absence of other emotional words is 
+        not used as a criterion for judging the accuracy of the answer.
+    First, check the response and please rate score 0 if the response is not a valid answer.
+    Please rate score 2 if the response completely or almost completely matches the correct answer on completeness, accuracy, and relevance. 
+    Please rate score 1 if the response partly matches the correct answer on completeness, accuracy, and relevance.
+    Please rate score 0 if the response doesn't match the correct answer on completeness, accuracy, and relevance at all.
+    Please only provide the result in the following format: Score:'''
+    print(f"(Prompt) {msg}")
+
+    for i in range(5):
+        response = deepseek_eval(msg)
+        print(f"(Evaluate {i+1}) {response}")
+        score = response.split(": ")[-1]
+        result.append(score)
+    eval_result = [int(rst) for rst in result]
+    score = sum(eval_result) / 10
+    return result, score
+```
+
+## Official Results on EEmo-Bench
+
+Moved to [leaderboards](leaderboards/). Please click to see details.
+
+## Contact
+
+Please contact the first author of this paper for queries.
+
+- Lancheng Gao, `glc628318@gmail.com`, @workerred
+
+## Citation
+
+If you find our work interesting, please feel free to cite our paper:
+
+```bibtex
+@misc{gao2025eemobenchbenchmarkmultimodallarge,
+      title={EEmo-Bench: A Benchmark for Multi-modal Large Language Models on Image Evoked Emotion Assessment}, 
+      author={Lancheng Gao and Ziheng Jia and Yunhao Zeng and Wei Sun and Yiming Zhang and Wei Zhou and Guangtao Zhai and Xiongkuo Min},
+      year={2025},
+      eprint={2504.16405},
+      archivePrefix={arXiv},
+      primaryClass={cs.MM},
+      url={https://arxiv.org/abs/2504.16405}, 
+}
 ```
