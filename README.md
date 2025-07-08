@@ -176,7 +176,7 @@ from MLLM_model import Model, Tokenizer, embed_image_and_text
 from PIL import Image
 import torch
 
-vad_dimension = "valence" # arousal, dominance
+vad = "valence" # arousal, dominance
 prompt = f"Assume you are an expert in emotional psychology. How would you rate the {vad} this " \
 "image evokes in the viewer? The level of {vad} this image evokes in the viewer is"
 
@@ -191,7 +191,7 @@ weight = torch.tensor([1,0.5,0])
 vad_pred = torch.inner(p_l, weight)
 ```
 
-\* Note that you can modify `vad_dimension` to switch between predicting valence, arousal, or dominance scores, but you need to match the related level keywords `toks` with them. (See the [paper](https://arxiv.org/abs/2504.16405) for details.)
+\* Note that you can modify `vad` to switch between predicting valence, arousal, or dominance scores, but you need to match the related level keywords `toks` with them. (See the [paper](https://arxiv.org/abs/2504.16405) for details.)
 
    3. Evaluate open-ended responses.
 
