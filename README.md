@@ -243,7 +243,7 @@ Moved to [leaderboards](leaderboards/). Please click to see details.
 
 Please contact the first author of this paper for queries.
 
-- Lancheng Gao, `glc628318@gmail.com`, @workerred
+- Lancheng Gao, `gaolancheng@sjtu.edu.cn`, @workerred
 
 ## Citation
 
