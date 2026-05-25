@@ -250,13 +250,11 @@ Please contact the first author of this paper for queries.
 If you find our work interesting, please feel free to cite our paper:
 
 ```bibtex
-@misc{gao2025eemobenchbenchmarkmultimodallarge,
-      title={EEmo-Bench: A Benchmark for Multi-modal Large Language Models on Image Evoked Emotion Assessment}, 
-      author={Lancheng Gao and Ziheng Jia and Yunhao Zeng and Wei Sun and Yiming Zhang and Wei Zhou and Guangtao Zhai and Xiongkuo Min},
-      year={2025},
-      eprint={2504.16405},
-      archivePrefix={arXiv},
-      primaryClass={cs.MM},
-      url={https://arxiv.org/abs/2504.16405}, 
+@inproceedings{gao2025eemo,
+  title={Eemo-bench: a benchmark for multi-modal large language models on image evoked emotion assessment},
+  author={Gao, Lancheng and Jia, Ziheng and Zeng, Yunhao and Sun, Wei and Zhang, Yiming and Zhou, Wei and Zhai, Guangtao and Min, Xiongkuo},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={7064--7073},
+  year={2025}
 }
 ```
