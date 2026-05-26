@@ -32,7 +32,7 @@ _How MLLMs Perform on Image Evoked Emotion Understanding?_
 </div>
 
 <div>
-    <a href="https://arxiv.org/abs/2504.16405"><strong>Paper</strong></a> |
+    <a href="https://dl.acm.org/doi/abs/10.1145/3746027.3755777"><strong>Paper</strong></a> |
     <a href="https://github.com/workerred/EEmo-Bench"><strong>Github</strong></a> |
     <a href="https://huggingface.co/datasets/Workerred/EEmo-Bench_single"><strong>Single Image Data</strong></a>   |
     <a href="https://huggingface.co/datasets/Workerred/EEmo-Bench_pair"><strong>Image Pair Data</strong></a>  
@@ -54,7 +54,7 @@ We introduce **EEmo-Bench**, a novel benchmark dedicated to the analysis of the 
 - [2025/7/7] 🔥 Release official Results of 19 commonly-used MLLMs on EEmo-Bench, click on [leaderboards](leaderboards/) to view details.
 - [2025/7/6] 🔥 Release the sample script for testing on EEmo-Bench.
 - [2025/7/5] 🔥 Release [single-image](https://huggingface.co/datasets/Workerred/EEmo-Bench_single) and [image-pair](https://huggingface.co/datasets/Workerred/EEmo-Bench_pair) evoked emotion understanding question-answer datasets.
-- [2025/7/4] 🔥 Our work ["EEmo-Bench: A Benchmark for Multi-modal Large Language Models on Image Evoked Emotion Assessment"](https://arxiv.org/abs/2504.16405) is accepted by ACMMM 2025.
+- [2025/7/4] 🔥 Our work ["EEmo-Bench: A Benchmark for Multi-modal Large Language Models on Image Evoked Emotion Assessment"](https://dl.acm.org/doi/abs/10.1145/3746027.3755777) is accepted by ACMMM 2025.
 
 ## EEmo-Bench Construction
 For each image in EEmo-Bench, a content category and two types of emotional attributes are attached: 
