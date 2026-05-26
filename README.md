@@ -15,17 +15,17 @@ _How MLLMs Perform on Image Evoked Emotion Understanding?_
     <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=6KCeFTQAAAAJ&view_op=list_works&gmla=AH8HC4zpp4nUK5A3YmkhcwdHF2O5NwoCsCInYb0SW2ZHWxl-tUMaE_8OISiYvwIAfFSyg033cF7FLxHchO-sedO9qI_fHD0QlzjsiUCAvSc" target="_blank">Lancheng Gao</a><sup>1</sup>,
     <a href="https://scholar.google.com/citations?user=JYqad5sAAAAJ&hl=zh-CN" target="_blank">Ziheng Jia</a><sup>1</sup>,
     <a href="https://orcid.org/0009-0001-6429-5763" target="_blank">Yunhao Zeng</a><sup>1</sup>,
-    <a href="https://scholar.google.com/citations?hl=zh-CN&user=nDlEBJ8AAAAJ" target="_blank">Wei Sun</a><sup>1</sup>,
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=nDlEBJ8AAAAJ" target="_blank">Wei Sun</a><sup>2</sup>,
 </div>
 
 <div>
     <a href="https://github.com/mingZhang614" target="_blank">Yiming Zhang</a><sup>1</sup>,
-    <a href="https://scholar.google.com/citations?hl=en&user=vbR9_cgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Wei Zhou</a><sup>2</sup>,
+    <a href="https://scholar.google.com/citations?hl=en&user=vbR9_cgAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Wei Zhou</a><sup>3</sup>,
     <a href="https://ee.sjtu.edu.cn/en/FacultyDetail.aspx?id=24&infoid=153&flag=153" target="_blank">Guangtao Zhai</a><sup>1</sup>,
     <a href="https://minxiongkuo.github.io/" target="_blank">Xiongkuo Min</a><sup>1</sup><sup>#</sup>
 </div>
   <div>
-        <sup>1</sup>Shanghai Jiaotong University,  <sup>2</sup>Cardiff University
+        <sup>1</sup>Shanghai Jiao Tong University,  <sup>2</sup>East China Normal University, <sup>3</sup>Cardiff University
     </div>   
 <div>
     <sup># </sup>Corresponding author. 
